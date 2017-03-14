@@ -1,0 +1,21 @@
+{
+  "name": "Scrap.TF Spell Checker",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Not that kind of spell!",
+  "homepage_url": "https://github.com/J-S-T-C/scrap-tf-spell-checker",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["src/inject/inject.js"]
+    }
+  ]
+}
